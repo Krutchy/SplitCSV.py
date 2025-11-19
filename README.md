@@ -1,5 +1,7 @@
 # SplitCSV.py
 Takes a CSV file (presumably a large one) and writes 'chunks' of it to separate CSV's at a specified location on the host machine. Each chunk will have the original file's headers and name, with a number added to the end representing what set of rows it has (e.g., 'sample_1.csv' has the first chunk of rows while 'output_8.csv' has the eighth).
+
+This is generally for applications where an upper limit for an input's size is given, so chunks within that limit can be processed normally.
 ## Package Requirements
 The script uses the following packages:
 ```
